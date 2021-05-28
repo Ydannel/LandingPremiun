@@ -22,7 +22,9 @@ export default function IndexPage() {
           <Banner />
           <KeyFeature />
           <ServiceSection />
+          <br/>
           <Feature />
+          <br/>
           <CoreFeature />
           <WorkFlow />
           <Package />

@@ -48,6 +48,7 @@ const styles = {
   },
   contentBox: {
     flexShrink: 0,
+    mt: '5%',
     px: [0, null, '30px', 0],
     textAlign: ['center', null, null, 'left'],
     width: ['100%', '80%', null, 340, 400, 430, null, 485],
@@ -60,6 +61,7 @@ const styles = {
   thumbnail: {
     display: 'inline-flex',
     position: 'relative',
+    mt: '5%',
     mr: 'auto',
     ml: ['auto', null, null, null, 7],
     '> img': {

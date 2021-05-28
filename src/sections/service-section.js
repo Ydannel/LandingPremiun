@@ -80,6 +80,7 @@ export default function ServiceSection() {
      
       </Container>
       <ModalVideo 
+      //when it click, show the video
         channel="youtube"
         isOpen={videoOpen}
         videoId="ecMtT1pGBzs"
