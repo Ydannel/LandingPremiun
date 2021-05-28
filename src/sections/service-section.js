@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-/** @jsx jsx */
+
 import { jsx, Container, Box, Grid, Text, Heading, Button, Image } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import TextFeature from 'components/text-feature';
@@ -37,7 +37,12 @@ const data = {
 
 export default function ServiceSection() {
   return (
-    <h1>Service Section</h1>
+   <section sx={{variant: 'section.services'}}>
+      <Container sx={styles.containerBox}>
+        <Box></Box>
+      </Container>
+   </section>
+     
   );
 }
 
