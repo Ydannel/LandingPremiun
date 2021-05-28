@@ -45,7 +45,7 @@ const data = [
 
 export default function Feature() {
   return (
-    <settion sx={{variant: 'section.feature'}}>
+    <section sx={{variant: 'section.feature'}}>
       <Container>
         <SectionHeader slogan="Quality features" title="Amazing useful features"/>
         <Grid sx={styles.grid}>
@@ -61,7 +61,7 @@ export default function Feature() {
             ))}
         </Grid>
       </Container>
-    </settion>
+    </section>
   );
 }
 

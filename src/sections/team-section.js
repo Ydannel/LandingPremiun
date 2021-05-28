@@ -43,8 +43,8 @@ const data = [
   {
     id: 2,
     imgSrc: Member2,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
+    altText: 'Lina Jutila',
+    title: 'Lina Jutila',
     designation: 'Founder',
     socialProfile: [
       {
@@ -70,8 +70,8 @@ const data = [
   {
     id: 3,
     imgSrc: Member3,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
+    altText: 'Aaron Skyland',
+    title: 'Aaron Skyland',
     designation: 'Web Designer',
     socialProfile: [
       {
@@ -97,8 +97,8 @@ const data = [
   {
     id: 4,
     imgSrc: Member4,
-    altText: 'Lina Jutila',
-    title: 'Lina Jutila',
+    altText: 'Elijah Belikov',
+    title: 'Elijah Belikov',
     designation: 'Web Developer',
     socialProfile: [
       {
@@ -124,9 +124,9 @@ const data = [
   {
     id: 5,
     imgSrc: Member5,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
-    designation: 'CEO and Founder',
+    altText: 'Andrew Sanz',
+    title: 'Andrew Sanz',
+    designation: 'UX | UI designer',
     socialProfile: [
       {
         id: 1,
@@ -151,9 +151,9 @@ const data = [
   {
     id: 6,
     imgSrc: Member6,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Web Designer',
+    altText: 'Peeta Melark',
+    title: 'Peeta Melark',
+    designation: 'Front-end Developer',
     socialProfile: [
       {
         id: 1,
@@ -179,7 +179,24 @@ const data = [
 
 export default function TeamSection() {
   return (
-    <h1>Team Section</h1>
+    <section>
+    <Container>
+      <SectionHeader slogan="Our team" title="The most qualified and talented individuals"/>
+      <Grid sx={styles.grid}>
+          {data.map((item)=>(
+            //display the info above here
+            <TeamCard
+              key={item.id}
+              src={item.imgSrc}
+              alt={item.altText}
+              title={item.title}
+              designation={item.designation}
+              social={item.socialProfile}
+            />
+          ))}
+      </Grid>
+    </Container>
+  </section>
   );
 }
 

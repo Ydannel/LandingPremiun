@@ -8,7 +8,7 @@ export default function Logo({ src, ...rest }) {
    sx={{variant:'links.logo',
         display: 'flex',
           cursor:'pointer',
-          width: '11%',
+          width: '9.5%',
           mr:15}}
           {...rest}
           >
